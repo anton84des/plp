@@ -4,7 +4,8 @@
   "description": "plp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile: scss": "node-sass scss -o css",
+    "watch: scss": "node-sass --watch scss -o css"
   },
   "author": "anton",
   "license": "ISC",
