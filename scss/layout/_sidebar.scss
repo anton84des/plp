@@ -1,0 +1,78 @@
+.filter {
+    // background-color: aqua;
+    // border-right: 1px solid black;
+    display: block;
+    min-width: 200px;
+    padding: 15px;
+    margin-right: 20px;
+
+  .color-filters {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      .item-filter {
+        margin-bottom: 20px;
+      }
+  }
+}
+
+.filter-head{
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 ;
+}
+
+.color-filters {
+  display: flex;
+}
+.circle-input {
+    opacity: 0;
+    margin-right: 15px;
+  }
+
+  .circle-input:checked ~ .circle-label {
+    &::before {
+      border: 1px solid #646464;
+    }
+}
+  
+  .circle-label {
+    position: relative;
+    
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      transform: translate(0,-50%);
+      top: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  #red {
+    &::before {
+      background-color: $red-color;
+    }
+  }
+
+  #yellow {
+    &::before {
+      background-color: $yellow-color;
+    }
+  }
+
+  #blue {
+    &::before {
+      background-color: $blue-color;
+    }
+  }
+
+  #green {
+    &::before {
+      background-color: $green-color;
+    }
+  }
