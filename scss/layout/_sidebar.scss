@@ -1,24 +1,22 @@
 .filter {
-    // background-color: aqua;
-    // border-right: 1px solid black;
     display: block;
     min-width: 200px;
-    padding: 15px;
-    margin-right: 20px;
+    padding: $spacing-15;
+    margin-right: $spacing-20;
 
   .color-filters {
-      margin-top: 20px;
+      margin-top: $spacing-20;
       display: flex;
       flex-direction: column;
 
-      .item-filter {
-        margin-bottom: 20px;
+      .filter-item {
+        margin-bottom: $spacing-20;
       }
   }
 }
 
-.filter-head{
-  font-size: 20px;
+.filter-heading{
+  font-size: $heading-h3-font-size;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 ;
@@ -27,18 +25,18 @@
 .color-filters {
   display: flex;
 }
-.circle-input {
+.color-filter-input {
     opacity: 0;
-    margin-right: 15px;
+    margin-right: $spacing-15;
   }
 
-  .circle-input:checked ~ .circle-label {
+  .color-filter-input:checked ~ .color-filter-label {
     &::before {
-      border: 1px solid #646464;
+      border: 1px solid $color-filter-border;
     }
 }
   
-  .circle-label {
+  .color-filter-label {
     position: relative;
     
     &::before {
@@ -53,25 +51,25 @@
     }
   }
 
-  #red {
+  .red {
     &::before {
-      background-color: $red-color;
+      background-color:$red-filter-color;
     }
   }
 
-  #yellow {
+  .yellow {
     &::before {
-      background-color: $yellow-color;
+      background-color: $yellow-filter-color;
     }
   }
 
-  #blue {
+  .blue {
     &::before {
-      background-color: $blue-color;
+      background-color: $blue-filter-color;
     }
   }
 
-  #green {
+  .green {
     &::before {
       background-color: $green-color;
     }

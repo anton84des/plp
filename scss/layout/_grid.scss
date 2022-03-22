@@ -7,9 +7,7 @@ body {
 .container {
     display: flex;
     max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
+    margin: $spacing-30 auto 0 auto;
 }
 
 .products {
@@ -20,16 +18,15 @@ body {
 
     &-item {
         width: 300px;;
-        margin-bottom: 30px;
-        // background-color: rgb(213, 180, 228);
+        margin-bottom: $spacing-30;
         border-bottom: 1px solid black;
 
         &-img-box {
             display: flex;
             justify-content: center;
             width: 100%;
-            padding: 20px 0 20px 0;
-            background-color: rgb(202, 216, 216);
+            padding: $spacing-20 0;
+            background-color: $img-box-background-color;
         }
 
         &-img {
@@ -38,12 +35,12 @@ body {
     }
 
    &-info {
-        padding: 0 10px 0 10px;
-        margin-bottom: 10px;
+        padding: 0 $spacing-10;
+        margin-bottom: $spacing-10;
     }
 
     .name {
-        margin-bottom: 15px;
+        margin-bottom: $spacing-15;
     }
 
     &-info-color {
@@ -55,22 +52,22 @@ body {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        margin-right: 10px;
+        margin-right: $spacing-10;
     }
 
-    #products-info-color-red {
+    .products-info-color-red {
         background-color: $red-color;
     }
 
-    #products-info-color-blue {
+    .products-info-color-blue {
         background-color: $blue-color;
     }
 
-    #products-info-color-yellow {
+    .products-info-color-yellow {
         background-color: $yellow-color;
     }
 
-    #products-info-color-green {
+    .products-info-color-green {
         background-color: $green-color;
     }
 }
