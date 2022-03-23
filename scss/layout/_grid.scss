@@ -19,7 +19,7 @@ body {
     &-item {
         width: 300px;;
         margin-bottom: $spacing-xl;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $black-color;
 
         &-img-box {
             display: flex;

@@ -3,16 +3,7 @@ $red-color: #f14545;
 $yellow-color: #d9ff00;
 $blue-color: #3369dd;
 $green-color: #33c746;
-
-//product list
-$img-box-background-color: #cad8d8;
-
-//filter-colors
-$red-filter-color: $red-color;
-$yellow-filter-color: $yellow-color;
-$blue-filter-color: $blue-color;
-$green-filter-color: $green-color;
-$color-filter-border: #646464;
+$black-color: #000000;
 
 //spacing
 $spacing-xs: 10px;
@@ -24,4 +15,15 @@ $spacing-xl: 30px;
 $font-general: 'Roboto', sans-serif;
 
 //font sizes
-$heading-h3-font-size: 20px;
+$small-font-size: 20px;
+
+//product list
+$img-box-background-color: #cad8d8;
+
+//filter-colors
+$red-filter-color: $red-color;
+$yellow-filter-color: $yellow-color;
+$blue-filter-color: $blue-color;
+$green-filter-color: $green-color;
+$color-filter-border: #646464;
+

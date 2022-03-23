@@ -16,7 +16,7 @@
 }
 
 .filter-heading{
-  font-size: $heading-h3-font-size;
+  font-size: $small-font-size;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 ;
@@ -51,26 +51,18 @@
     }
   }
 
-  .red {
-    &::before {
-      background-color:$red-filter-color;
-    }
+  .red::before {
+    background-color: $red-filter-color; 
   }
 
-  .yellow {
-    &::before {
-      background-color: $yellow-filter-color;
-    }
+  .yellow::before {
+    background-color: $yellow-filter-color; 
   }
 
-  .blue {
-    &::before {
-      background-color: $blue-filter-color;
-    }
+  .blue::before {
+    background-color: $blue-filter-color;
   }
 
-  .green {
-    &::before {
-      background-color: $green-color;
-    }
+  .green::before {
+    background-color: $green-color; 
   }
