@@ -1,16 +1,16 @@
 .filter {
     display: block;
     min-width: 200px;
-    padding: $spacing-15;
-    margin-right: $spacing-20;
+    padding: $spacing-m;
+    margin-right: $spacing-l;
 
   .color-filters {
-      margin-top: $spacing-20;
+      margin-top: $spacing-l;
       display: flex;
       flex-direction: column;
 
       .filter-item {
-        margin-bottom: $spacing-20;
+        margin-bottom: $spacing-l;
       }
   }
 }
@@ -27,7 +27,7 @@
 }
 .color-filter-input {
     opacity: 0;
-    margin-right: $spacing-15;
+    margin-right: $spacing-m;
   }
 
   .color-filter-input:checked ~ .color-filter-label {
@@ -36,8 +36,8 @@
     }
 }
   
-  .color-filter-label {
-    position: relative;
+.color-filter-label {
+  position: relative;
     
     &::before {
       content: "";

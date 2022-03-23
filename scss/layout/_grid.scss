@@ -1,13 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
+    font-family: $font-general;
+    margin: 0;
     box-sizing: border-box;
 }
 
 .container {
     display: flex;
     max-width: 1600px;
-    margin: $spacing-30 auto 0 auto;
+    margin: $spacing-xl auto 0 auto;
 }
 
 .products {
@@ -18,14 +18,14 @@ body {
 
     &-item {
         width: 300px;;
-        margin-bottom: $spacing-30;
+        margin-bottom: $spacing-xl;
         border-bottom: 1px solid black;
 
         &-img-box {
             display: flex;
             justify-content: center;
             width: 100%;
-            padding: $spacing-20 0;
+            padding: $spacing-l 0;
             background-color: $img-box-background-color;
         }
 
@@ -35,39 +35,39 @@ body {
     }
 
    &-info {
-        padding: 0 $spacing-10;
-        margin-bottom: $spacing-10;
+        padding: 0 $spacing-xs;
+        margin-bottom: $spacing-xs;
     }
 
     .name {
-        margin-bottom: $spacing-15;
+        margin-bottom: $spacing-xs;
     }
 
     &-info-color {
         display: flex;
-    }
 
-    &-info-color-item {
-        display: block;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-right: $spacing-10;
-    }
+        &-item {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: $spacing-xs;
+        }
 
-    .products-info-color-red {
-        background-color: $red-color;
-    }
+        &-red {
+            background-color: $red-color;
+        }
 
-    .products-info-color-blue {
-        background-color: $blue-color;
-    }
+        &-blue {
+            background-color: $blue-color;
+        }
 
-    .products-info-color-yellow {
-        background-color: $yellow-color;
-    }
+        &-yellow {
+            background-color: $yellow-color;
+        }
 
-    .products-info-color-green {
-        background-color: $green-color;
+        &-green {
+            background-color: $green-color;
+        }
     }
 }
