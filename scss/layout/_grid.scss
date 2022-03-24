@@ -1,0 +1,73 @@
+body {
+    font-family: $font-general;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 1600px;
+    margin: $spacing-xl auto 0 auto;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    &-item {
+        width: 300px;;
+        margin-bottom: $spacing-xl;
+        border-bottom: 1px solid $black-color;
+
+        &-img-box {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: $spacing-l 0;
+            background-color: $img-box-background-color;
+        }
+
+        &-img {
+            width: 70%;
+        }
+    }
+
+   &-info {
+        padding: 0 $spacing-xs;
+        margin-bottom: $spacing-xs;
+    }
+
+    .name {
+        margin-bottom: $spacing-xs;
+    }
+
+    &-info-color {
+        display: flex;
+
+        &-item {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: $spacing-xs;
+        }
+
+        &-red {
+            background-color: $red-color;
+        }
+
+        &-blue {
+            background-color: $blue-color;
+        }
+
+        &-yellow {
+            background-color: $yellow-color;
+        }
+
+        &-green {
+            background-color: $green-color;
+        }
+    }
+}
