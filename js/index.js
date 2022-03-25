@@ -14,8 +14,6 @@ function colorsAssign () {
 
 }
 
-colorsAssign();
-
 //function that filtrates products by color
 function colorFilter () {
     let colorCircles = document.querySelectorAll('.color-filter-label');
@@ -33,4 +31,5 @@ function colorFilter () {
     });
 }
 
+colorsAssign();
 colorFilter();
