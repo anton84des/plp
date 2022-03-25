@@ -25,44 +25,45 @@
 .color-filters {
   display: flex;
 }
-.color-filter-input {
-    opacity: 0;
-    margin-right: $spacing-m;
-  }
 
-  .color-filter-input:checked ~ .color-filter-label {
-    &::before {
-      border: 1px solid $color-filter-border;
-    }
+.color-filter-input {
+  opacity: 0;
+  margin-right: $spacing-m;
+}
+
+.color-filter-input:checked ~ .color-filter-label {
+  &::before {
+    border: 3px solid $color-filter-border;
+  }
 }
   
 .color-filter-label {
   position: relative;
     
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      border-radius: 50%;
-      transform: translate(0,-50%);
-      top: 50%;
-      width: 20px;
-      height: 20px;
-    }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(0,-50%);
+    top: 50%;
+    width: 20px;
+    height: 20px;
   }
+}
 
-  .red::before {
-    background-color: $red-filter-color; 
-  }
+.red::before {
+  background-color: $red-filter-color; 
+}
 
-  .yellow::before {
-    background-color: $yellow-filter-color; 
-  }
+.yellow::before {
+  background-color: $yellow-filter-color; 
+}
 
-  .blue::before {
-    background-color: $blue-filter-color;
-  }
+.blue::before {
+  background-color: $blue-filter-color;
+}
 
-  .green::before {
-    background-color: $green-color; 
-  }
+.green::before {
+  background-color: $green-color; 
+}
