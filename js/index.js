@@ -22,16 +22,16 @@ function colorFilter() {
     for (item of productItems) {
         item.classList.add('d-none');
 
-        if (colorCircles.length === 0) {
-            item.classList.remove('d-none');
-        }
-
         for (circle of colorCircles) {
             let circleColor = circle.getAttribute('data-color');
 
             if (item.classList.contains(circleColor)) {
                 item.classList.remove('d-none');
             }
+        }
+
+        if (colorCircles.length === 0) {
+            item.classList.remove('d-none');
         }
     }
 }
