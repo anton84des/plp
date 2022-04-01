@@ -51,5 +51,16 @@ function colorFilter() {
     });
 }
 
+document.querySelector('.filter').addEventListener('click', function (event) {
+    if (!event.target.classList.contains('color-filter-label')) return false;
+    let colorFilterLabel = document.querySelectorAll('.color-filter-label');
+    colorFilterLabel.forEach((element) => {
+        console.log(this);
+    })
+
+    // console.log(event.target);
+    // console.log(this);
+});
+
 colorsAssign();
 colorFilter();
