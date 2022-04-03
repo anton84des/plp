@@ -14,29 +14,170 @@ function colorsAssign() {
     }
 };
 
-
+let productItemsArr = Array.from(productItems);
 let colorFilterInput = document.querySelectorAll('.color-filter-input');
-
+let noneBlocks = [];
 for (let i = 0; i < colorFilterLabel.length; i++) {
 
     colorFilterInput[i].onclick = function () {
 
         let filterItem = colorFilterLabel[i].getAttribute('data-color');
-        console.log(filterItem);
+        // let showBlocks = [];
+
 
         if (colorFilterInput[i].checked) {
-            for (let k = 0; k < productItems.length; k++) {
 
-                if (!productItems[k].classList.contains(filterItem)) {
-                    productItems[k].classList.add('d-none');
-                } else if (!productItems[k].classList.contains(filterItem) || productItems[k].classList.contains('d-none')) {
-                    productItems[k].classList.toggle('d-none');
+            productItemsArr.forEach((elem) => {
+                // if (elem.classList.contains(filterItem)) {
+                //     showBlocks.push(elem);
+                // }
+                if (!elem.classList.contains(filterItem)) {
+                    noneBlocks.push(elem);
                 }
-            }
-
+                elem.classList.remove('d-none');
+            });
+            // console.log(showBlocks);
+            // console.log(noneBlocks);
         }
-    };
+
+        // for (let i = 0; i < showBlocks.length; i++) {
+        //     if (showBlocks[i].classList.contains('d-none')) {
+        //         showBlocks[i].classList.remove('d-none');
+        //         showBlocks[i].classList.add('d-show');
+        //     }
+        //     else if (showBlocks[i].classList.contains('d-show')) {
+        //         showBlocks[i].classList.remove('d-none');
+        //     }
+        //     else {
+        //         showBlocks[i].classList.add('d-show');
+        //     };
+        // }
+
+        for (let i = 0; i < noneBlocks.length; i++) {
+            // if (!noneBlocks[i].classList.contains('d-none')) {
+            noneBlocks[i].classList.add('d-none');
+            //     noneBlocks[i].classList.remove('d-show');
+            // } else {
+            //     noneBlocks[i].classList.add('d-show');
+            //     noneBlocks[i].classList.remove('d-none');
+            // }
+        }
+    }
 }
+
+// showBlocks[i].classList.add('d-show');
+// showBlocks[i].classList.remove('d-none');
+
+// for (let i = 0; i < productItemsArr.length; i++) {
+//     productItemsArr[i].classList.add('d-none');
+// }
+
+// for (let i = 0; i < colorFilterLabel.length; i++) {
+
+//     colorFilterInput[i].onclick = function () {
+
+//         let filterItem = colorFilterLabel[i].getAttribute('data-color');
+//         console.log(filterItem);
+
+//         if (colorFilterInput[i].checked) {
+
+//             productItems.forEach((elem) => {
+//                 if (!elem.classList.contains(filterItem) && !elem.classList.contains('d-none')) {
+//                     elem.classList.add('d-none');
+//                 }
+//             });
+
+//         }
+//         else {
+
+//             productItems.forEach((elem) => {
+//                 if (elem.classList.contains(filterItem) && elem.classList.contains('d-none')) {
+//                     elem.classList.remove('d-none');
+//                 }
+//             });
+//         }
+//     }
+// }
+
+
+// for (let i = 0; i < colorFilterLabel.length; i++) {
+
+//     colorFilterInput[i].onclick = function () {
+
+//         let filterItem = colorFilterLabel[i].getAttribute('data-color');
+//         console.log(filterItem);
+
+//         let funcCheck = function () {
+
+//             if (colorFilterInput[i].checked) {
+
+//                 productItems.forEach((elem) => {
+//                     if (!elem.classList.contains(filterItem) && !elem.classList.contains('d-none')) {
+//                         elem.classList.add('d-none');
+//                     }
+//                 });
+
+//             } else {
+
+//                 productItems.forEach((elem) => {
+//                     if (elem.classList.contains(filterItem) && elem.classList.contains('d-none')) {
+//                         elem.classList.remove('d-none');
+//                     }
+//                 });
+//             }
+//         }
+
+//         funcCheck();
+//     }
+// }
+
+
+
+
+
+
+// if (colorFilterInput[i].checked) {
+//     for (let k = 0; k < productItems.length; k++) {
+
+//         if (!productItems[k].classList.contains(filterItem)) {
+//             productItems[k].classList.add('d-none');
+//         }
+//     }
+// } else {
+//     for (let k = 0; k < productItems.length; k++) {
+
+//         if (productItems[k].classList.contains(filterItem) && productItems[k].classList.contains('d-none')) {
+//             productItems[k].classList.remove('d-none');
+//         }
+//     }
+// }
+
+
+
+
+
+// for (let i = 0; i < colorFilterLabel.length; i++) {
+
+//     colorFilterInput[i].onclick = function () {
+
+//         let filterItem = colorFilterLabel[i].getAttribute('data-color');
+//         console.log(filterItem);
+
+//         if (colorFilterInput[i].checked) {
+//             for (let k = 0; k < productItems.length; k++) {
+
+//                 if (!productItems[k].classList.contains(filterItem)) {
+//                     productItems[k].classList.add('d-none');
+//                 } else if (!productItems[k].classList.contains(filterItem) || productItems[k].classList.contains('d-none')) {
+//                     productItems[k].classList.toggle('d-none');
+//                 }
+//             }
+
+//         }
+//     };
+// }
+
+
 
 
 // productItems[k].classList.contains(filterItem);
