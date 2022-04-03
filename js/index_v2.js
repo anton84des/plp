@@ -17,53 +17,36 @@ function colorsAssign() {
 let productItemsArr = Array.from(productItems);
 let colorFilterInput = document.querySelectorAll('.color-filter-input');
 let noneBlocks = [];
+let showBlocks = [];
 for (let i = 0; i < colorFilterLabel.length; i++) {
 
-    colorFilterInput[i].onclick = function () {
+    colorFilterLabel[i].onclick = function () {
 
         let filterItem = colorFilterLabel[i].getAttribute('data-color');
-        // let showBlocks = [];
 
-
-        if (colorFilterInput[i].checked) {
-
-            productItemsArr.forEach((elem) => {
-                // if (elem.classList.contains(filterItem)) {
-                //     showBlocks.push(elem);
-                // }
-                if (!elem.classList.contains(filterItem)) {
-                    noneBlocks.push(elem);
-                }
-                elem.classList.remove('d-none');
-            });
-            // console.log(showBlocks);
-            // console.log(noneBlocks);
-        }
-
-        // for (let i = 0; i < showBlocks.length; i++) {
-        //     if (showBlocks[i].classList.contains('d-none')) {
-        //         showBlocks[i].classList.remove('d-none');
-        //         showBlocks[i].classList.add('d-show');
-        //     }
-        //     else if (showBlocks[i].classList.contains('d-show')) {
-        //         showBlocks[i].classList.remove('d-none');
-        //     }
-        //     else {
-        //         showBlocks[i].classList.add('d-show');
-        //     };
-        // }
+        productItemsArr.forEach((elem) => {
+            if (!elem.classList.contains(filterItem)) {
+                noneBlocks.push(elem);
+            }
+            elem.classList.remove('d-none');
+        });
 
         for (let i = 0; i < noneBlocks.length; i++) {
-            // if (!noneBlocks[i].classList.contains('d-none')) {
             noneBlocks[i].classList.add('d-none');
-            //     noneBlocks[i].classList.remove('d-show');
-            // } else {
-            //     noneBlocks[i].classList.add('d-show');
-            //     noneBlocks[i].classList.remove('d-none');
-            // }
         }
+        showBlocks = noneBlocks.filter(elem => {
+            console.log(elem);
+            if (elem.classList.contains(filterItem)) {
+                return elem
+            };
+        });
+        console.log(noneBlocks);
+
     }
 }
+
+showBlocks.forEach(elem => { elem.classList.remove('d-none') });
+
 
 // showBlocks[i].classList.add('d-show');
 // showBlocks[i].classList.remove('d-none');
