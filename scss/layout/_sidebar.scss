@@ -33,14 +33,29 @@
 
 .color-filter-input:checked ~ .color-filter-label {
   &::before {
-    border: 3px solid $color-filter-border;
+    // border: 3px solid $color-filter-border;
+    opacity: 1;
+
   }
 }
   
 .color-filter-label {
   position: relative;
-    
+
   &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-10%,-50%);
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: $black-color;
+    opacity: 0;
+  }
+    
+  &::after {
     content: "";
     display: block;
     position: absolute;
@@ -50,20 +65,21 @@
     width: 20px;
     height: 20px;
   }
+
 }
 
-.red::before {
+.red::after {
   background-color: $red-filter-color; 
 }
 
-.yellow::before {
+.yellow::after {
   background-color: $yellow-filter-color; 
 }
 
-.blue::before {
+.blue::after {
   background-color: $blue-filter-color;
 }
 
-.green::before {
+.green::after {
   background-color: $green-color; 
 }

@@ -13,12 +13,12 @@ body {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     width: 100%;
 
     &-item {
         width: 300px;;
-        margin-bottom: $spacing-xl;
+        margin: 0 12px $spacing-xl 12px;
         border-bottom: 1px solid $black-color;
 
         &-img-box {
