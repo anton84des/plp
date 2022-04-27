@@ -33,7 +33,6 @@
 
 .color-filter-input:checked ~ .color-filter-label {
   &::before {
-    // border: 3px solid $color-filter-border;
     opacity: 1;
 
   }

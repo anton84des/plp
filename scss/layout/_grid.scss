@@ -1,3 +1,7 @@
+html {
+    margin-left: calc(100vw - 100%);
+  }
+
 body {
     font-family: $font-general;
     margin: 0;
@@ -71,3 +75,4 @@ body {
         }
     }
 }
+
