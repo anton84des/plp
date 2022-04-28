@@ -1,35 +1,35 @@
 // button reset
-    .button-reset-link {
-        width: 73px;
-        height: 20px;
-        border: 1px solid $black-color;
-        padding: $spacing-xs;
-        border-radius: 28px;
-        display: block;
-        position: relative;
-        text-decoration: none;
-        color: $black-color;
+.button-reset-link {
+    width: 73px;
+    height: 20px;
+    border: 1px solid $black-color;
+    padding: $spacing-xs;
+    border-radius: 28px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: $black-color;
 
-        &:hover {
-            cursor: pointer;
-            border: 1px solid $img-box-background-color;
-            transition: border ease;
-
-            &::after {
-                transform: rotate(40deg);
-                transition: rotate ease;
-            }     
-        }
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $img-box-background-color;
+        transition: border ease;
 
         &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 59px;
-            top: 9px;
-            background-image: url(../img/cancel.png);
-            background-size: 20px 20px;
-        }
+            transform: rotate(40deg);
+            transition: rotate ease;
+        }     
     }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 59px;
+        top: 9px;
+        background-image: url(../img/cancel.png);
+        background-size: 20px 20px;
+    }
+}
