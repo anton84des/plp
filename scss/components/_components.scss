@@ -12,13 +12,13 @@
 
     &:hover {
         cursor: pointer;
-        border: 1px solid $img-box-background-color;
+        border: 1px solid $main-color;
         transition: border ease;
 
         &::after {
             transform: rotate(40deg);
             transition: rotate ease;
-        }     
+        }
     }
 
     &::after {
@@ -31,5 +31,28 @@
         top: 9px;
         background-image: url(../img/cancel.png);
         background-size: 20px 20px;
+    }
+}
+
+// button checkout
+.checkout-container-form-button-link {
+    display: block;
+    width: 340px;
+    margin-bottom: 36px;
+    border-radius: 8px;
+    height: 48px;
+    padding: 0 10px;
+    background-color: $main-color;
+    text-align: center;
+    line-height: 2.2;
+    font-family: $font-checkout;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $form-border-color;
+        transition: 0.7s;
     }
 }

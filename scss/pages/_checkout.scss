@@ -1,0 +1,61 @@
+.checkout-container {
+    max-width: 780px;
+    padding: 0 $spacing-l;
+    margin: $spacing-xl auto 0 auto;
+
+    &-header {
+        font-family: $font-checkout;
+        font-weight: 700;
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    &-form {
+        width: 360px;
+        margin-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &-payment {
+                margin: 50px 0 36px 0;
+
+                &-card {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    padding: $spacing-l;
+                    border: 1px solid $form-border-color;
+                    border-radius: 8px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &-form.adress,
+    .card-number {
+        width: 100%;
+    }
+
+    &-form.cvv,
+    .holder-name {
+        width: 340px;
+        margin-bottom: $spacing-m;
+    }
+}
+
+.thanks {
+    margin-top: 46px;
+
+    &-message {
+        font-family: $font-checkout;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+}
