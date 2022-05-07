@@ -5,3 +5,12 @@
 .bold {
     font-weight: bold
 }
+
+
+.hide {
+    // display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition-timing-function: linear, step-end;
+}

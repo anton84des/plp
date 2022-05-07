@@ -1,13 +1,14 @@
 .checkout-container {
     max-width: 780px;
     padding: 0 $spacing-l;
-    margin: $spacing-xl auto 0 auto;
+    margin: 0 auto;
 
     &-header {
         font-family: $font-checkout;
         font-weight: 700;
         font-size: 28px;
         margin-bottom: 32px;
+        width: 100%;
     }
 
     &-form {
@@ -16,23 +17,27 @@
         display: flex;
         flex-direction: column;
 
-        &-block {
+        &-block-shipping {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            margin-bottom: 36px;
+            transition: opacity 1s linear, height 1s step-start;
+        }
 
-            &-payment {
-                margin: 50px 0 36px 0;
+        &-block-payment {
+            margin-bottom: 36px;
+            transition: opacity 1s linear, height 1s step-start;
 
-                &-card {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    padding: $spacing-l;
-                    border: 1px solid $form-border-color;
-                    border-radius: 8px;
-                    height: auto;
-                }
+            &-card {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: $spacing-l;
+                margin-bottom: 36px;
+                border: 1px solid $form-border-color;
+                border-radius: 8px;
+                height: auto;
             }
         }
     }
@@ -51,6 +56,7 @@
 
 .thanks {
     margin-top: 46px;
+    transition: opacity 1s linear, height 1s step-start;
 
     &-message {
         font-family: $font-checkout;
@@ -58,4 +64,8 @@
         font-size: 24px;
         text-align: center;
     }
+}
+
+.empty-fields {
+    color: $red-color;
 }

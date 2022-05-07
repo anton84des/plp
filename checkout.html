@@ -14,8 +14,9 @@
 <body>
     <div class="checkout-container">
         <div class="choosen-product"></div>
-        <h1 class="checkout-container-header">SHIPPING</h1>
-        <div class="checkout-container-form-block">
+
+        <div class="checkout-container-form-block-shipping">
+            <h1 class="checkout-container-header">SHIPPING</h1>
             <div class="checkout-container-form">
                 <label class="checkout-container-label" for="name"><span class="star">*</span>Name</label>
                 <input class="checkout-container-input" type="text" id="name">
@@ -25,7 +26,8 @@
                 <input class="checkout-container-input" type="text" id="surname">
             </div>
             <div class="checkout-container-form adress">
-                <label class="checkout-container-label" for="adress"><span class="star">*</span>Adress (city, street,
+                <label class="checkout-container-label" for="adress"><span class="star">*</span>Adress (city,
+                    street,
                     building, apartment)</label>
                 <input class="checkout-container-input" type="text" id="adress">
             </div>
@@ -37,11 +39,13 @@
                 <label class="checkout-container-label" for="phone"><span class="star">*</span>Phone</label>
                 <input class="checkout-container-input" type="text" id="phone">
             </div>
+            <div class="checkout-container-form-button">
+                <a class="checkout-container-form-button-link js-next" data-step="shipping">Next</a>
+
+            </div>
         </div>
-        <div class="checkout-container-form-button">
-            <a class="checkout-container-form-button-link">Next</a>
-        </div>
-        <div class="checkout-container-form-block-payment">
+
+        <div class="checkout-container-form-block-payment hide">
             <h1 class="checkout-container-header">PAYMENT</h1>
             <div class="checkout-container-form-block-payment-card">
                 <div class="checkout-container-form card-number">
@@ -59,16 +63,17 @@
                     <input class="checkout-container-input" type="text" id="holder-name">
                 </div>
             </div>
+            <div class="checkout-container-form-button">
+                <a class="checkout-container-form-button-link js-next" data-step="payment">FINISH</a>
+            </div>
         </div>
-        <div class="checkout-container-form-button">
-            <a class="checkout-container-form-button-link">FINISH</a>
-        </div>
-        <div class="thanks">
+        <p class="empty-fields d-none">Empty fields</p>
+        <div class="thanks hide">
             <p class="thanks-message">Thanks for your order</p>
         </div>
     </div>
 
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/checkout.js"></script>
 </body>
 
 </html>
