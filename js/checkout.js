@@ -24,10 +24,9 @@ function inputsValidate() {
 
     currentInputs.forEach(elem => {
         if (!elem.value) {
-            console.log('Error');
+            let errorMsg = elem.getAttribute('data-error');
             elem.classList.add('checkout-container-input-error');
-            elem.nextElementSibling.textContent = 'Empty fields';
-
+            elem.nextElementSibling.textContent = errorMsg;
         }
 
         elem.addEventListener('input', function () {
@@ -35,11 +34,10 @@ function inputsValidate() {
             elem.nextElementSibling.textContent = '';
         });
     });
-}
+};
 
 function nextStep() {
     let inputErrors = document.querySelectorAll('.checkout-container-input-error');
-    console.log(inputErrors);
     let currentStep = this.getAttribute('data-step');
     if (!(inputErrors.length > 0)) {
         if (currentStep === 'shipping') {
@@ -50,7 +48,7 @@ function nextStep() {
             thanksBlock.classList.remove('hide');
         }
     }
-}
+};
 
 addMessageError();
 
@@ -60,44 +58,20 @@ nextButton.forEach(elem => {
 });
 
 
+// Local storage
 
+let choosenProduct = document.querySelector('.choosen-product');
+let choosenProductImg = document.querySelector('.products-item-img');
+console.log(choosenProductImg);
 
-// function inputsValidate() {
-//     let currentInputs;
-//     let currentStep = this.getAttribute('data-step');
-//     if (currentStep === 'shipping') {
-//         currentInputs = shippingBlock.querySelectorAll('.checkout-container-input');
-//     }
-//     if (currentStep === 'payment') {
-//         currentInputs = paymentBlock.querySelectorAll('.checkout-container-input');
-//     }
+function insertProduct() {
+    let name = localStorage.getItem('name');
+    let color = localStorage.getItem('color');
+    let image = localStorage.getItem('image');
 
-//     currentInputs.forEach(elem => {
-//         if (!elem.value) {
-//             emptyFields.classList.remove('d-none');
-//             console.log('Error');
-//             elem.classList.add('checkout-container-input-error');
+    choosenProductImg.setAttribute('src', image);
+    choosenProduct.innerHTML += 'You bought ' + name + ' ' + color;
+};
 
-//         } else {
-//             emptyFields.classList.add('d-none');
-//             console.log('No error');
-//             elem.classList.remove('checkout-container-input-error');
-
-//         }
-//     });
-
-//     if (emptyFields.classList.contains('d-none')) {
-//         if (currentStep === 'shipping') {
-//             shippingBlock.classList.add('hide');
-//             paymentBlock.classList.remove('hide');
-//         } else {
-//             paymentBlock.classList.add('hide');
-//             thanksBlock.classList.remove('hide');
-//         }
-//     }
-// }
-
-// nextButton.forEach(elem => {
-//     elem.addEventListener('click', inputsValidate);
-// });
+insertProduct();
 

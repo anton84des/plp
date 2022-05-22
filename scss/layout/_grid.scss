@@ -1,6 +1,6 @@
 html {
     margin-left: calc(100vw - 100%);
-  }
+}
 
 body {
     font-family: $font-general;
@@ -21,7 +21,8 @@ body {
     width: 100%;
 
     &-item {
-        width: 300px;;
+        width: 300px;
+        ;
         margin: 0 12px $spacing-xl 12px;
         border-bottom: 1px solid $black-color;
 
@@ -38,7 +39,7 @@ body {
         }
     }
 
-   &-info {
+    &-info {
         padding: 0 $spacing-xs;
         margin-bottom: $spacing-xs;
     }
@@ -49,6 +50,7 @@ body {
 
     &-info-color {
         display: flex;
+        margin-bottom: $spacing-m;
 
         &-item {
             display: block;
@@ -75,4 +77,3 @@ body {
         }
     }
 }
-

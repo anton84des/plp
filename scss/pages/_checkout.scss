@@ -1,3 +1,17 @@
+.products-item-img-box.checkout-img {
+    width: 300px;
+    margin-bottom: $spacing-l;
+}
+
+.choosen-product {
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 32px;
+    width: 100%;
+    margin: $spacing-m 0;
+}
+
 .checkout-container {
     max-width: 780px;
     padding: 0 $spacing-l;

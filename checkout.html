@@ -13,31 +13,35 @@
 
 <body>
     <div class="checkout-container">
-        <div class="choosen-product"></div>
+        <div class="choosen-product">
+            <div class="products-item-img-box checkout-img">
+                <img class="products-item-img" src="./img/placeholder-image.png" alt="product pict">
+            </div>
+        </div>
 
         <div class="checkout-container-form-block-shipping">
             <h1 class="checkout-container-header">SHIPPING</h1>
             <div class="checkout-container-form">
                 <label class="checkout-container-label" for="name"><span class="star">*</span>Name</label>
-                <input class="checkout-container-input" type="text" id="name">
+                <input class="checkout-container-input" type="text" id="name" data-error="Enter name">
             </div>
             <div class="checkout-container-form">
                 <label class="checkout-container-label" for="surname"><span class="star">*</span>Surname</label>
-                <input class="checkout-container-input" type="text" id="surname">
+                <input class="checkout-container-input" type="text" id="surname" data-error="Enter surname">
             </div>
             <div class="checkout-container-form adress">
                 <label class="checkout-container-label" for="adress"><span class="star">*</span>Adress (city,
                     street,
                     building, apartment)</label>
-                <input class="checkout-container-input" type="text" id="adress">
+                <input class="checkout-container-input" type="text" id="adress" data-error="Enter adress">
             </div>
             <div class="checkout-container-form">
                 <label class="checkout-container-label" for="email"><span class="star">*</span>Email</label>
-                <input class="checkout-container-input" type="text" id="email">
+                <input class="checkout-container-input" type="text" id="email" data-error="Enter email">
             </div>
             <div class="checkout-container-form">
                 <label class="checkout-container-label" for="phone"><span class="star">*</span>Phone</label>
-                <input class="checkout-container-input" type="text" id="phone">
+                <input class="checkout-container-input" type="text" id="phone" data-error="Enter phone">
             </div>
             <div class="checkout-container-form-button">
                 <a class="checkout-container-form-button-link js-next" data-step="shipping">Next</a>
@@ -51,16 +55,16 @@
                 <div class="checkout-container-form card-number">
                     <label class="checkout-container-label" for="card-number"><span class="star">*</span>Card
                         Number</label>
-                    <input class="checkout-container-input" type="text" id="card-number">
+                    <input class="checkout-container-input" type="text" id="card-number" data-error="Enter card number">
                 </div>
                 <div class="checkout-container-form cvv">
                     <label class="checkout-container-label" for="cvv"><span class="star">*</span>CVV</label>
-                    <input class="checkout-container-input" type="text" id="cvv">
+                    <input class="checkout-container-input" type="text" id="cvv" data-error="Enter card cvv">
                 </div>
                 <div class="checkout-container-form holder-name">
                     <label class="checkout-container-label" for="holder-name"><span class="star">*</span>Holder
                         name</label>
-                    <input class="checkout-container-input" type="text" id="holder-name">
+                    <input class="checkout-container-input" type="text" id="holder-name" data-error="Enter holder name">
                 </div>
             </div>
             <div class="checkout-container-form-button">
