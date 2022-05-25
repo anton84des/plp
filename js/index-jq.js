@@ -61,7 +61,6 @@ function productSet() {
     localStorage.setItem('name', $productName);
     localStorage.setItem('color', $productColor);
     localStorage.setItem('image', $productImage);
-
 }
 
 $buttonBuy.on('click', productSet);

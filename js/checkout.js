@@ -62,7 +62,6 @@ nextButton.forEach(elem => {
 
 let choosenProduct = document.querySelector('.choosen-product');
 let choosenProductImg = document.querySelector('.products-item-img');
-console.log(choosenProductImg);
 
 function insertProduct() {
     let name = localStorage.getItem('name');
@@ -70,7 +69,7 @@ function insertProduct() {
     let image = localStorage.getItem('image');
 
     choosenProductImg.setAttribute('src', image);
-    choosenProduct.innerHTML += 'You bought ' + name + ' ' + color;
+    choosenProduct.innerHTML += `You bought ${name} ${color}`;
 };
 
 insertProduct();
