@@ -28,16 +28,13 @@
 }
 
 .carousel-cell {
+    display: flex;
+    justify-content: center;
+    align-items: end;
     width: 33%;
     height: 240px;
     margin-right: 10px;
     background: $main-color;
-}
-
-.carousel-cell {
-    display: flex;
-    justify-content: center;
-    align-items: end;
 }
 
 .products-item-img-box-flickity {
