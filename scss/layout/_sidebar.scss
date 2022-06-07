@@ -1,25 +1,25 @@
 .filter {
-    display: block;
-    min-width: 200px;
-    padding: $spacing-m;
-    margin-right: $spacing-l;
+  display: block;
+  min-width: 200px;
+  padding: $spacing-m;
+  margin-right: $spacing-l;
 
   .color-filters {
-      margin-top: $spacing-l;
-      display: flex;
-      flex-direction: column;
+    margin-top: $spacing-l;
+    display: flex;
+    flex-direction: column;
 
-      .filter-item {
-        margin-bottom: $spacing-l;
-      }
+    .filter-item {
+      margin-bottom: $spacing-l;
+    }
   }
 }
 
-.filter-heading{
+.filter-heading {
   font-size: $small-font-size;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0 ;
+  margin: 0;
 }
 
 .color-filters {
@@ -31,13 +31,13 @@
   margin-right: $spacing-m;
 }
 
-.color-filter-input:checked ~ .color-filter-label {
+.color-filter-input:checked~.color-filter-label {
   &::before {
     opacity: 1;
 
   }
 }
-  
+
 .color-filter-label {
   position: relative;
 
@@ -46,20 +46,20 @@
     display: block;
     position: absolute;
     border-radius: 50%;
-    transform: translate(-10%,-50%);
+    transform: translate(-10%, -50%);
     top: 50%;
     width: 25px;
     height: 25px;
     background-color: $black-color;
     opacity: 0;
   }
-    
+
   &::after {
     content: "";
     display: block;
     position: absolute;
     border-radius: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     top: 50%;
     width: 20px;
     height: 20px;
@@ -68,11 +68,11 @@
 }
 
 .red::after {
-  background-color: $red-filter-color; 
+  background-color: $red-filter-color;
 }
 
 .yellow::after {
-  background-color: $yellow-filter-color; 
+  background-color: $yellow-filter-color;
 }
 
 .blue::after {
@@ -80,5 +80,5 @@
 }
 
 .green::after {
-  background-color: $green-color; 
+  background-color: $green-color;
 }

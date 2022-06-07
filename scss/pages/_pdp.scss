@@ -1,0 +1,49 @@
+.pdp-container {
+    max-width: 780px;
+    margin: $spacing-m auto;
+    display: flex;
+}
+
+.products-item-img-box-pdp {
+    margin-right: $spacing-l;
+    width: 50%;
+}
+
+.products-info-pdp {
+    width: 50%
+}
+
+.name-pdp {
+    font-size: $medium-font-size;
+    margin: 0 auto $spacing-m;
+}
+
+.flickity-wrapper {
+    max-width: 780px;
+    margin: 70px auto;
+}
+
+.flickity-head {
+    text-align: center;
+}
+
+.carousel-cell {
+    width: 33%;
+    height: 240px;
+    margin-right: 10px;
+    background: $main-color;
+}
+
+.carousel-cell {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.products-item-img-box-flickity {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 256px;
+    transition: 0.3s;
+}

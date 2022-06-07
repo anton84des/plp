@@ -51,17 +51,23 @@ $buttonReset.on('click', function () {
 // Local storage
 
 $buttonBuy = $('.button-buy');
+$productsItemImgBox = $('.products-item-img-box');
 
 function productSet() {
 
-    let $productName = $(this).siblings('.name').html();
+    let $productName = $(this).closest($productItem).find('.name').html();
     let $productColor = $(this).closest($productItem).find('.products-info-color-item').data('color');
     let $productImage = $(this).closest($productItem).find('.products-item-img').attr('src');
+    console.log($productName);
+
+    let $productColorCircle = 'products-info-color-' + $productColor;
 
     localStorage.setItem('name', $productName);
     localStorage.setItem('color', $productColor);
+    localStorage.setItem('colorCircle', $productColorCircle);
     localStorage.setItem('image', $productImage);
+    console.log('gfdjgkfjgd');
 }
 
 $buttonBuy.on('click', productSet);
-
+$productsItemImgBox.on('click', productSet);

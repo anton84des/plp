@@ -26,6 +26,7 @@ body {
         margin: 0 12px $spacing-xl 12px;
         border-bottom: 1px solid $black-color;
 
+        &-img-box>a,
         &-img-box {
             display: flex;
             justify-content: center;
