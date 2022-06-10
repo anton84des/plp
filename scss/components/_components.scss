@@ -92,7 +92,10 @@
 
 .button-buy-flickity {
     position: absolute;
-    transform: translate(0, 42px);
+    transform: translateY(141px);
+    opacity: 0;
+    transition: 0.3s;
+
 
     &-link {
         width: 73px;
