@@ -14,6 +14,29 @@ function insertProduct() {
 
 insertProduct();
 
+//
+
+$buttonBuy = $('.button-buy-flickity');
+let $carouselСell = $('.carousel-cell');
+
+function productSetCarousel() {
+
+    let $productName = $(this).closest($carouselСell).find('.name').html();
+    let $productColor = $(this).closest($carouselСell).find('.products-info-color-item').data('color');
+    let $productImage = $(this).closest($carouselСell).find('.products-item-img').attr('src');
+    let $productColorCircle = 'products-info-color-' + $productColor;
+
+    localStorage.setItem('name', $productName);
+    localStorage.setItem('color', $productColor);
+    localStorage.setItem('colorCircle', $productColorCircle);
+    localStorage.setItem('image', $productImage);
+    localStorage.setItem('color', $productColor);
+}
+
+$buttonBuy.on('click', productSetCarousel);
+
+//
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity(elem, {
     selectedAttraction: 0.01,
@@ -28,6 +51,8 @@ var flkty = new Flickity(elem, {
 var flkty = new Flickity('.main-carousel', {
     // options
 });
+
+
 
 // flickity button buy
 
