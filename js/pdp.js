@@ -16,7 +16,7 @@ insertProduct();
 
 //
 
-$buttonBuyFlickity = $('.button-buy-flickity');
+let $buttonBuyFlickity = $('.button-buy-flickity');
 let $carouselСell = $('.carousel-cell');
 
 function productSetCarousel() {
@@ -35,10 +35,10 @@ function productSetCarousel() {
 
 $buttonBuyFlickity.on('click', productSetCarousel);
 
-let buttonBy = document.querySelector('.button-buy');
-buttonBy.onclick = function () {
+let $buttonBy = $('.button-buy');
+$buttonBy.on('click', function () {
     localStorage.removeItem('button-clicked');
-};
+});
 
 //
 

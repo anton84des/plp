@@ -5,7 +5,7 @@ let thanksBlock = document.querySelector('.thanks');
 let nextButton = document.querySelectorAll('.js-next');
 let emptyFields = document.querySelector('.empty-fields');
 
-function addMessageError() {
+function messageErrorInForm() {
     let allForms = document.querySelectorAll('.checkout-container-form');
     allForms.forEach(elem => {
         elem.innerHTML += '<p class="empty-fields"></p>';
@@ -50,7 +50,7 @@ function nextStep() {
     }
 };
 
-addMessageError();
+messageErrorInForm();
 
 nextButton.forEach(elem => {
     elem.addEventListener('click', inputsValidate);
