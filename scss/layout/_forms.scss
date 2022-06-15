@@ -1,16 +1,16 @@
 .star {
-    margin-right: 4px;
+    margin-right: $spacing-xxs;
     color: $form-star-red-color;
     font-family: $font-checkout;
     font-weight: 400;
-    font-size: 18px;
+    font-size: $font-size-xs;
 }
 
 .checkout-container-label {
     font-family: $font-checkout;
     font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: $font-size-xs;
+    margin-bottom: $spacing-xxs;
 }
 
 .checkout-container-input {
@@ -19,7 +19,7 @@
     height: 48px;
     padding: 0 $spacing-xs;
 
-    &-error {
+    d &-error {
         border: 1px solid $form-star-red-color;
     }
 

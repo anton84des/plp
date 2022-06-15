@@ -15,7 +15,7 @@
     }
 
     .name-pdp {
-        font-size: $medium-font-size;
+        font-size: $font-size-xl;
         margin: 0 auto $spacing-m;
     }
 
@@ -37,7 +37,7 @@
     .carousel-cell {
         width: 256px;
         height: 280px;
-        margin-right: 10px;
+        margin-right: $spacing-xs;
     }
 
     .product-cell-wrapper {
@@ -68,7 +68,7 @@
     }
 
     h4 {
-        margin: 10px 10px 10px 0;
+        margin: $spacing-xs $spacing-xs $spacing-xs 0;
     }
 
     .products-info-color-flickity {
