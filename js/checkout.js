@@ -68,9 +68,19 @@ function insertProduct() {
     let color = localStorage.getItem('color');
     let image = localStorage.getItem('image');
 
-    choosenProductImg.setAttribute('src', image);
-    choosenProduct.innerHTML += `You bought ${name} ${color}`;
+    let nameCarousel = localStorage.getItem('name-carousel');
+    let colorCarousel = localStorage.getItem('color-carousel');
+    let imageCarousel = localStorage.getItem('image-carousel');
+    let buttonClicked = localStorage.getItem('button-clicked');
+
+
+    if (buttonClicked != 'true') {
+        choosenProductImg.setAttribute('src', image);
+        choosenProduct.innerHTML += `You bought ${name} ${color}`;
+    } else {
+        choosenProductImg.setAttribute('src', imageCarousel);
+        choosenProduct.innerHTML += `You bought ${nameCarousel} ${colorCarousel}`;
+    };
 };
 
 insertProduct();
-

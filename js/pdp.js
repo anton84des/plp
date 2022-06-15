@@ -16,7 +16,7 @@ insertProduct();
 
 //
 
-$buttonBuy = $('.button-buy-flickity');
+$buttonBuyFlickity = $('.button-buy-flickity');
 let $carouselСell = $('.carousel-cell');
 
 function productSetCarousel() {
@@ -26,14 +26,19 @@ function productSetCarousel() {
     let $productImage = $(this).closest($carouselСell).find('.products-item-img').attr('src');
     let $productColorCircle = 'products-info-color-' + $productColor;
 
-    localStorage.setItem('name', $productName);
-    localStorage.setItem('color', $productColor);
-    localStorage.setItem('colorCircle', $productColorCircle);
-    localStorage.setItem('image', $productImage);
-    localStorage.setItem('color', $productColor);
-}
+    localStorage.setItem('name-carousel', $productName);
+    localStorage.setItem('color-carousel', $productColor);
+    localStorage.setItem('colorCircle-carousel', $productColorCircle);
+    localStorage.setItem('image-carousel', $productImage);
+    localStorage.setItem('button-clicked', true);
+};
 
-$buttonBuy.on('click', productSetCarousel);
+$buttonBuyFlickity.on('click', productSetCarousel);
+
+let buttonBy = document.querySelector('.button-buy');
+buttonBy.onclick = function () {
+    localStorage.removeItem('button-clicked');
+};
 
 //
 
@@ -51,56 +56,3 @@ var flkty = new Flickity(elem, {
 var flkty = new Flickity('.main-carousel', {
     // options
 });
-
-
-
-// flickity button buy
-
-// let carouselCell = document.querySelectorAll('.carousel-cell');
-// let buttonBuyFlickity = document.querySelectorAll('.button-buy-flickity');
-// let productsItemImgBoxFlickity = document.querySelectorAll('.products-item-img-box-flickity');
-
-// function showButtonBy(cell) {
-//     buttonBuyFlickity.forEach((elem) => {
-//         if (cell.contains(elem)) {
-//             elem.classList.add('d-show')
-//             elem.classList.remove('d-none-flickity');
-//         }
-//     });
-// };
-
-// function hideButtonBy(cell) {
-//     buttonBuyFlickity.forEach((elem) => {
-//         if (cell.contains(elem)) {
-//             elem.classList.remove('d-show');
-//             elem.classList.add('d-none-flickity')
-//         }
-//     });
-// };
-
-// function transformImgMin(cell) {
-//     productsItemImgBoxFlickity.forEach((elem) => {
-//         if (cell.contains(elem)) {
-//             elem.classList.add('products-item-img-box-flickity-transform')
-//         }
-//     })
-// };
-// function transformImgMax(cell) {
-//     productsItemImgBoxFlickity.forEach((elem) => {
-//         if (cell.contains(elem)) {
-//             elem.classList.remove('products-item-img-box-flickity-transform')
-//         }
-//     })
-// };
-
-// carouselCell.forEach((cell) => {
-//     cell.onmouseenter = () => {
-//         showButtonBy(cell);
-//         transformImgMin(cell);
-//     }
-
-//     cell.onmouseleave = () => {
-//         hideButtonBy(cell);
-//         transformImgMax(cell);
-//     }
-// });
