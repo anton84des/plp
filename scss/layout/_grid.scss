@@ -1,3 +1,7 @@
+html {
+    margin-left: calc(100vw - 100%);
+}
+
 body {
     font-family: $font-general;
     margin: 0;
@@ -13,20 +17,21 @@ body {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     width: 100%;
 
     &-item {
-        width: 300px;;
-        margin-bottom: $spacing-xl;
+        width: 300px;
+        margin: 0 12px $spacing-xl 12px;
         border-bottom: 1px solid $black-color;
 
+        &-img-box>a,
         &-img-box {
             display: flex;
             justify-content: center;
             width: 100%;
             padding: $spacing-l 0;
-            background-color: $img-box-background-color;
+            background-color: $main-color;
         }
 
         &-img {
@@ -34,7 +39,7 @@ body {
         }
     }
 
-   &-info {
+    &-info {
         padding: 0 $spacing-xs;
         margin-bottom: $spacing-xs;
     }
@@ -45,6 +50,7 @@ body {
 
     &-info-color {
         display: flex;
+        margin-bottom: $spacing-m;
 
         &-item {
             display: block;

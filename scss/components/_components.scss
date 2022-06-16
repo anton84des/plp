@@ -1,0 +1,133 @@
+// button reset
+.button-reset-link {
+    width: 73px;
+    height: 20px;
+    border: 1px solid $black-color;
+    padding: $spacing-xs;
+    border-radius: 28px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: $black-color;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $main-color;
+        transition: border ease;
+
+        &::after {
+            transform: rotate(40deg);
+            transition: rotate ease;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 59px;
+        top: 9px;
+        background-image: url(../img/cancel.png);
+        background-size: 20px 20px;
+    }
+}
+
+// button checkout
+.checkout-container-form-button-link {
+    display: block;
+    width: 340px;
+    border-radius: 8px;
+    height: 48px;
+    padding: 0 $spacing-xs;
+    background-color: $main-color;
+    text-align: center;
+    line-height: 2.2;
+    font-family: $font-checkout;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $form-border-color;
+        transition: 0.7s;
+    }
+}
+
+// button buy
+.button-buy-link {
+    width: 73px;
+    height: 20px;
+    border: 1px solid $black-color;
+    padding: $spacing-xs;
+    border-radius: 28px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: $black-color;
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $main-color;
+        transition: border ease;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 59px;
+        top: 9px;
+        background-image: url(../img/buy.png);
+        background-size: 20px 20px;
+    }
+}
+
+// button buy flickity
+
+.button-buy-flickity {
+    position: absolute;
+    transform: translateY(141px);
+    opacity: 0;
+    transition: 0.3s;
+
+
+    &-link {
+        width: 73px;
+        height: 20px;
+        border: 1px solid $black-color;
+        padding: $spacing-xs;
+        border-radius: 28px;
+        display: block;
+        position: relative;
+        text-decoration: none;
+        color: $black-color;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $black-color;
+            color: white;
+            transition: border ease;
+
+            &::after {
+                background-image: url(../img/white-buy.png);
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 59px;
+            top: 9px;
+            background-image: url(../img/buy.png);
+            background-size: 20px 20px;
+        }
+    }
+}

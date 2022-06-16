@@ -1,24 +1,33 @@
 //colors
+$main-color: #cad8d8;
 $red-color: #f14545;
+$form-star-red-color: #FF0000;
 $yellow-color: #d9ff00;
 $blue-color: #3369dd;
 $green-color: #33c746;
 $black-color: #000000;
+$form-border-color: #C0BDBD;
 
 //spacing
+$spacing-xxs: 5px;
 $spacing-xs: 10px;
 $spacing-m: 15px;
 $spacing-l: 20px;
 $spacing-xl: 30px;
+$spacing-xxl: 36px;
 
 //font
-$font-general: 'Roboto', sans-serif;
+$font-general: 'Roboto',
+    sans-serif;
+$font-checkout: 'inter',
+    sans-serif;
 
 //font sizes
-$small-font-size: 20px;
+$font-size-xs: 18px;
+$font-size-m: 20px;
+$font-size-l: 28px;
+$font-size-xl: 30px;
 
-//product list
-$img-box-background-color: #cad8d8;
 
 //filter-colors
 $red-filter-color: $red-color;
@@ -26,4 +35,3 @@ $yellow-filter-color: $yellow-color;
 $blue-filter-color: $blue-color;
 $green-filter-color: $green-color;
 $color-filter-border: #646464;
-

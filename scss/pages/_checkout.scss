@@ -1,0 +1,85 @@
+.products-item-img-box.checkout-img {
+    width: 300px;
+    margin-bottom: $spacing-l;
+}
+
+.choosen-product {
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    font-size: $font-size-l;
+    margin-bottom: 32px;
+    width: 100%;
+    margin: $spacing-m 0;
+}
+
+.checkout-container {
+    max-width: 780px;
+    padding: 0 $spacing-l;
+    margin: 0 auto;
+
+    &-header {
+        font-family: $font-checkout;
+        font-weight: 700;
+        font-size: $font-size-l;
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    &-form {
+        width: 360px;
+        margin-bottom: $spacing-xxl;
+        display: flex;
+        flex-direction: column;
+
+        &-block-shipping {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: $spacing-xxl;
+            transition: opacity 1s linear, height 1s step-start;
+        }
+
+        &-block-payment {
+            margin-bottom: $spacing-xxl;
+            transition: opacity 1s linear, height 1s step-start;
+
+            &-card {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: $spacing-l;
+                margin-bottom: $spacing-xxl;
+                border: 1px solid $form-border-color;
+                border-radius: 8px;
+                height: auto;
+            }
+        }
+    }
+
+    &-form.adress,
+    .card-number {
+        width: 100%;
+    }
+
+    &-form.cvv,
+    .holder-name {
+        width: 340px;
+        margin-bottom: $spacing-m;
+    }
+}
+
+.thanks {
+    margin-top: 46px;
+    transition: opacity 1s linear, height 1s step-start;
+
+    &-message {
+        font-family: $font-checkout;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+.empty-fields {
+    color: $red-color;
+}
