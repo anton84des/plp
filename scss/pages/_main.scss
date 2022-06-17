@@ -1,27 +1,18 @@
-.pdp-main-wrapper {
-    .pdp-container {
-        max-width: 780px;
-        margin: $spacing-xl auto;
-        display: flex;
-    }
+.container-main {
+    max-width: 1054px;
+    margin: 30px auto 0 auto;
 
-    .products-item-img-box-pdp {
-        margin-right: $spacing-l;
-        width: 50%;
-    }
-
-    .products-info-pdp {
-        width: 50%
-    }
-
-    .name-pdp {
-        font-size: $font-size-xl;
-        margin: 0 auto $spacing-m;
+    .banner-head {
+        font-family: $font-banner;
+        font-size: 90px;
+        font-weight: 500;
+        text-align: center;
+        margin: 75px 0;
     }
 
     .flickity-wrapper {
-        max-width: 780px;
-        margin: 70px auto;
+        max-width: 1054px;
+        margin: 60px auto;
     }
 
     .flickity-head {
@@ -31,7 +22,6 @@
     .products-item-img {
         margin: $spacing-xl;
         transition: 0.3s;
-
     }
 
     .carousel-cell {
@@ -58,7 +48,6 @@
                 transform: scale(0.9) scale(0.85) translate(0px, -24px);
             }
         }
-
     }
 
     .product-info-cell-wrapper {

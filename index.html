@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="css/global.css">
     <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/index-jq.js"></script>
+    <script defer src="js/sticky-header.js"></script>
     <title>Product listing page</title>
 </head>
 
 <body>
+    <div class="header">
+        <div class="header-logo">
+            <a href="#">
+                <img class="header-logo-img" src="./img/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <a href="main.html" class="header-menu-item">Main</a>
+                <a href="index.html" class="header-menu-item">Products</a>
+                <a href="#" class="header-menu-item">Random</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="filter">
             <h3 class="filter-heading">Choose color:</h3>
@@ -167,12 +182,91 @@
                     </div>
                 </div>
             </div>
-
+            <div class="products-item">
+                <div class="products-item-img-box">
+                    <a href="pdp.html">
+                        <img class="products-item-img" src="./img/red-diamond-ring.png" alt="product pict">
+                    </a>
+                </div>
+                <div class="products-info">
+                    <h4 class="name">Silver ring Bliss</h4>
+                    <div class="products-info-color">
+                        <div class="products-info-color-item products-info-color-red" data-color="red"></div>
+                    </div>
+                    <div class="button-buy">
+                        <a class="button-buy-link" href="checkout.html">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-item-img-box">
+                    <a href="pdp.html">
+                        <img class="products-item-img" src="./img/blue-diamond-ring.png" alt="product pict">
+                    </a>
+                </div>
+                <div class="products-info">
+                    <h4 class="name">Silver ring Passion</h4>
+                    <div class="products-info-color">
+                        <div class="products-info-color-item products-info-color-blue" data-color="blue"></div>
+                    </div>
+                    <div class="button-buy">
+                        <a class="button-buy-link" href="checkout.html">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-item-img-box">
+                    <a href="pdp.html">
+                        <img class="products-item-img" src="./img/yellow-diamond-ring.png" alt="product pict">
+                    </a>
+                </div>
+                <div class="products-info">
+                    <h4 class="name">Golden ring Love</h4>
+                    <div class="products-info-color">
+                        <div class="products-info-color-item products-info-color-yellow" data-color="yellow"></div>
+                    </div>
+                    <div class="button-buy">
+                        <a class="button-buy-link" href="checkout.html">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="products-item">
+                <div class="products-item-img-box">
+                    <a href="pdp.html">
+                        <img class="products-item-img" src="./img/red-diamond-ring.png" alt="product pict">
+                    </a>
+                </div>
+                <div class="products-info">
+                    <h4 class="name">Silver ring Attraction</h4>
+                    <div class="products-info-color">
+                        <div class="products-info-color-item products-info-color-red" data-color="red"></div>
+                    </div>
+                    <div class="button-buy">
+                        <a class="button-buy-link" href="checkout.html">Buy</a>
+                    </div>
+                </div>
+            </div>
         </div>
-
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-container-logo">
+                <img src="./img/logo-invert.png" alt="">
+            </div>
+            <div class="contacts">
+                <h4 class="contacts-us">Contact us:</h4>
+                <div class="contacts-block">
+                    <div class="phone"><a class="contacts-link" href="tel:+380971725179">+38 (097) 172-51-79</a></div>
+                    <div class="telegramm"><a class="contacts-link" href="https://telegram.me/anton84des">Write to
+                            telegram</a></div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ea suscipit ex eum quae minus vel
+                    perferendis. Incidunt consequatur tenetur sit debitis perferendis veritatis possimus necessitatibus,
+                    reprehenderit enim! Temporibus, asperiores.</p>
+            </div>
+        </div>
     </div>
 
-    <!-- <script src="js/index.js"></script> -->
 </body>
 
 </html>
