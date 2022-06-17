@@ -68,3 +68,5 @@ function productSet() {
 
 $buttonBuy.on('click', productSet);
 $productsItemImgBox.on('click', productSet);
+
+

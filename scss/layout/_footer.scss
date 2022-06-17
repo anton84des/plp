@@ -1,0 +1,76 @@
+.footer {
+    width: 100%;
+    background-color: $black-color;
+
+    .container {
+        flex-direction: row;
+        padding: $spacing-xl 0;
+
+        .footer-container-logo {
+            margin-right: $spacing-xl;
+        }
+
+        .footer-container-logo>img {
+            width: 150px;
+        }
+    }
+}
+
+.contacts-us {
+    color: $main-color;
+    font-family: $font-general;
+    font-weight: 500;
+    font-size: $font-size-l;
+    line-height: 0.8;
+    margin: 0 0 $spacing-xl 0;
+}
+
+.contacts-block {
+    display: flex;
+}
+
+.phone {
+    margin-right: $spacing-xxl;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../img/invert-phone-call.png);
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        top: 2px
+    }
+}
+
+.contacts>p {
+    font-family: $font-general;
+    color: $main-color;
+    font-size: 12px;
+    margin-top: 62px;
+}
+
+.telegramm {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../img/invert-telegram.png);
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        top: 2px
+    }
+}
+
+.contacts-link {
+    font-family: $font-general;
+    color: $main-color;
+    text-decoration: none;
+    font-size: $font-size-m;
+    margin-left: $spacing-xl;
+}
